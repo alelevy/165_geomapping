@@ -5,9 +5,12 @@
     <meta charset="utf-8">
     <title>Barbados Population Density</title>
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="example.css">
     <!-- D3.js Source -->
-    <script type= "text/javascript" src="http://d3js.org/d3.v3.min.js"></script>       
+    <script type= "text/javascript" src="http://d3js.org/d3.v4.min.js"></script>
+      <script src="//d3js.org/d3.v4.min.js" charset="utf-8"></script>
+    <script src="//d3js.org/topojson.v1.min.js"></script>
+
   </head>
     <h1 style = "text-align:center; color:steelblue"><bold> Barbados Population Density, 2010 </bold></h1>
     <style>
@@ -52,21 +55,30 @@
         display: inline-block;
         font-size: 12px;
     }
+    div.tooltip {   
+ 	  position: absolute;
+	   text-align: center;
+	   padding: 2px;
+	   font: 12px sans-serif;
+	   background: white;
+	   border: 0px;
+	   border-radius: 8px;
+	   pointer-events: none;
+    }   
 	
 </style>
 <body>
-<!--<input class="color" type="button" name="color_change" value="Change Color">
-<input class="boundary" type="button" name="boundary_change" value="Change Boundary">-->
-<script src="//d3js.org/d3.v3.min.js"></script>
+<input class="education" type="button" name="edu_change" value="Switch to Education">
+<script src="//d3js.org/d3.v4.min.js"></script>
 <script src="//d3js.org/topojson.v1.min.js"></script>
-<script type="text/javascript" src="popdensity.js"></script>
+<script type="text/javascript" src="example.js"></script>
     <!-- Submission Info -->
     <!--<h4>Created by "Your Name" </h4>-->
-      <a href="https://github.com/alelevy/165_geomapping">https://github.com/alelevy/165_geomapping</a>
-    <p>Alexandra Levy</p>
-      <p> Instructor: Suresh Lodha</p>
-    <p>CMPS 165: Data Programming for Visualization</p>
-    <p>Spring 2018</p>
+<a href="https://github.com/alelevy/165_geomapping">https://github.com/alelevy/165_geomapping</a>
+<p>Alexandra Levy</p>
+<p> Instructor: Suresh Lodha</p>
+<p>CMPS 165: Data Programming for Visualization</p>
+<p>Spring 2018</p>
     <!-- Create a list using <ul> and <li> tag -->   
  
   
